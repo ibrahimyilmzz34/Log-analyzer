@@ -84,7 +84,7 @@ Scenario 4 shows why this matters. The username itself is `from`:
 Failed password for invalid user from from 127.0.0.1 port 50198 ssh2
 ```
 
-If you search for the word `from` and take the next field, you get `from`, not the IP. An attacker can use this kind of **log injection** to hide their real address. Reading `parcalar[-4]` avoids the trap.
+If you search for the word `from` and take the next field, you get `from`, not the IP. An attacker can use this kind of **log injection** to hide their real address. Reading `parts[-4]` avoids the trap.
 
 ### Other events in the log (not analyzed yet)
 
