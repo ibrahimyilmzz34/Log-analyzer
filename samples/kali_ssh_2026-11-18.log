@@ -1,0 +1,24 @@
+Nov 18 20:43:19 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Nov 18 20:43:19 kali sshd[10790]: Server listening on 0.0.0.0 port 22.
+Nov 18 20:43:19 kali sshd[10790]: Server listening on :: port 22.
+Nov 18 20:43:19 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Nov 18 20:43:26 kali sshd-session[10794]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=ibrahim
+Nov 18 20:43:27 kali sshd-session[10794]: Failed password for ibrahim from ::1 port 55320 ssh2
+Nov 18 20:43:31 kali sshd-session[10794]: Failed password for ibrahim from ::1 port 55320 ssh2
+Nov 18 20:43:36 kali sshd-session[10794]: Failed password for ibrahim from ::1 port 55320 ssh2
+Nov 18 20:43:36 kali sshd-session[10794]: Connection closed by authenticating user ibrahim ::1 port 55320 [preauth]
+Nov 18 20:43:36 kali sshd-session[10794]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=ibrahim
+Nov 18 23:56:26 kali sshd-session[31918]: Invalid user admin from ::1 port 60384
+Nov 18 23:56:28 kali sshd-session[31918]: pam_unix(sshd:auth): check pass; user unknown
+Nov 18 23:56:28 kali sshd-session[31918]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+Nov 18 23:56:30 kali sshd-session[31918]: Failed password for invalid user admin from ::1 port 60384 ssh2
+Nov 18 23:56:34 kali sshd-session[31918]: pam_unix(sshd:auth): check pass; user unknown
+Nov 18 23:56:36 kali sshd-session[31918]: Failed password for invalid user admin from ::1 port 60384 ssh2
+Nov 18 23:56:39 kali sshd-session[31918]: Connection closed by invalid user admin ::1 port 60384 [preauth]
+Nov 18 23:56:39 kali sshd-session[31918]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+Nov 18 23:56:54 kali sshd-session[32141]: Accepted password for ibrahim from ::1 port 53386 ssh2
+Nov 18 23:56:54 kali sshd-session[32141]: pam_unix(sshd:session): session opened for user ibrahim(uid=1000) by ibrahim(uid=0)
+Nov 19 21:49:37 kali sshd-session[25344]: Failed password for invalid user from from 127.0.0.1 port 50198 ssh2
+Nov 19 21:49:41 kali sshd-session[25344]: Failed password for invalid user from from 127.0.0.1 port 50198 ssh2
+Nov 19 21:49:45 kali sshd-session[25344]: Failed password for invalid user from from 127.0.0.1 port 50198 ssh2
+Nov 19 21:49:47 kali sshd-session[25344]: Connection closed by invalid user from 127.0.0.1 port 50198 [preauth]
