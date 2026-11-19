@@ -30,6 +30,18 @@ Example output with the included sample log:
 
 `samples/kali_ssh_2026-11-18.log` was made in my own lab. I started the SSH server on a Kali Linux VM and then tried to log in to it from the same machine (`::1` / `127.0.0.1`). It contains no real third-party data.
 
+### How it was generated
+
+```bash
+sudo systemctl start ssh               # start the SSH server
+ssh ibrahim@localhost                  # real user, wrong passwords, then the right one
+ssh admin@localhost                    # user that doesn't exist
+ssh from@127.0.0.1                     # tricky username (see below)
+sudo journalctl -u ssh > kali_ssh.log  # export the SSH service logs
+```
+
+The exported file was then renamed with the date and placed in `samples/`.
+
 ### Scenarios in the log
 
 | # | Scenario | Source IP | Failed attempts | Result |
